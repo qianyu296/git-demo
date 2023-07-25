@@ -27,3 +27,9 @@ git笔记
 	查看日志详细信息: git log
 11、版本穿梭(可以将文件返回到历史版本):
 	 git reset --hard 版本号
+12、创建分支:
+	 git branch "分支名"
+13、查看所有分支:
+	 git branch -v
+14、切换分支:
+	 git checkout "分支名"
