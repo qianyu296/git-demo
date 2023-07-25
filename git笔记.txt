@@ -1,0 +1,27 @@
+git笔记
+(Linux常用指令: ll -> '显示当前文件夹所有文件' clear -> '清除控制台信息' CTRL+L -> ‘清除控制台信息’)
+1、设置全局用户名和邮箱:
+	 git config --global user.name "username"
+	 git config --global user.email "email@qq.com"
+2、初始化本地库:
+    只有初始化了本地库才能将当前文件夹交给git管理
+	 git init
+3、查看本地仓库状态:
+	 git status
+4、新增文件:
+	 vim filename(文件名)
+	 常用命令: (复制) 点击需要复制行,然后按yy,即可复制到粘贴板 (粘贴) 按p (保存并退出)开启大写模式,并且按“ZZ”
+5、查看文件内容:
+	 cat filename(文件名)
+6、查看文件最后n行
+	 tail -n x(查看最后多少行)
+7、将文件添加到暂存区:
+	 git add filename(文件名)
+8、删除暂存区文件:
+	 git rm --cached filename
+	 (rm:remove的缩写,代表的是去除的意思,cached是暂存缓存的意思 ：去除缓存)
+9、将暂存区文件提交到本地库中:
+	 git commit -m "logname(日志名)" filename(文件名)
+10、查看日志:
+	查看日志信息: git reflog
+	查看日志详细信息: git log
